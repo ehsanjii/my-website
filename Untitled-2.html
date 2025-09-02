@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات بازاریابی سلاطین</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Vazirmatn', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 0.8s ease forwards;
+        }
+        
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: #667eea;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold text-purple-600">👑 سلاطین</div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="flex items-center space-x-reverse space-x-8">
+                        <a href="#home" class="nav-link text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium">خانه</a>
+                        <a href="#services" class="nav-link text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium">خدمات</a>
+                        <a href="#about" class="nav-link text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium">درباره ما</a>
+                        <a href="#portfolio" class="nav-link text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium">نمونه کارها</a>
+                        <a href="#contact" class="nav-link text-gray-700 hover:text-purple-600 px-3 py-2 text-sm font-medium">تماس با ما</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-purple-600">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
+                <a href="#home" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-purple-600">خانه</a>
+                <a href="#services" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-purple-600">خدمات</a>
+                <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-purple-600">درباره ما</a>
+                <a href="#portfolio" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-purple-600">نمونه کارها</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-purple-600">تماس با ما</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg pt-20 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 fade-in">
+                    خدمات بازاریابی سلاطین
+                </h1>
+                <p class="text-xl md:text-2xl text-white mb-8 fade-in" style="animation-delay: 0.2s;">
+                    پادشاهی در دنیای دیجیتال با بهترین استراتژی‌های بازاریابی
+                </p>
+                <div class="fade-in" style="animation-delay: 0.4s;">
+                    <a href="#contact" class="bg-white text-purple-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition duration-300 inline-block">
+                        شروع همکاری
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">خدمات ما</h2>
+                <p class="text-lg text-gray-600">راه‌حل‌های جامع بازاریابی دیجیتال برای رشد کسب‌وکار شما</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="text-4xl mb-4">📱</div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-900">بازاریابی شبکه‌های اجتماعی</h3>
+                    <p class="text-gray-600 mb-6">مدیریت حرفه‌ای صفحات اینستاگرام، تلگرام و سایر پلتفرم‌ها</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>✓ تولید محتوای خلاقانه</li>
+                        <li>✓ مدیریت کامنت‌ها و پیام‌ها</li>
+                        <li>✓ تحلیل و گزارش‌دهی</li>
+                    </ul>
+                </div>
+
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-900">تبلیغات هدفمند</h3>
+                    <p class="text-gray-600 mb-6">کمپین‌های تبلیغاتی موثر در گوگل، اینستاگرام و فیسبوک</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>✓ تنظیم کمپین‌های حرفه‌ای</li>
+                        <li>✓ بهینه‌سازی مداوم</li>
+                        <li>✓ کاهش هزینه تبلیغات</li>
+                    </ul>
+                </div>
+
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="text-4xl mb-4">🌐</div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-900">طراحی وب‌سایت</h3>
+                    <p class="text-gray-600 mb-6">طراحی و توسعه وب‌سایت‌های مدرن و بهینه برای موبایل</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>✓ طراحی ریسپانسیو</li>
+                        <li>✓ بهینه‌سازی سئو</li>
+                        <li>✓ سرعت بالای لودینگ</li>
+                    </ul>
+                </div>
+
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="text-4xl mb-4">📊</div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-900">تحلیل و گزارش‌دهی</h3>
+                    <p class="text-gray-600 mb-6">تحلیل دقیق عملکرد و ارائه گزارش‌های جامع</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>✓ گزارش‌های هفتگی</li>
+                        <li>✓ تحلیل رقبا</li>
+                        <li>✓ پیشنهادات بهبود</li>
+                    </ul>
+                </div>
+
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="text-4xl mb-4">✍️</div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-900">تولید محتوا</h3>
+                    <p class="text-gray-600 mb-6">تولید محتوای جذاب و کیفیت برای تمام پلتفرم‌ها</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>✓ نوشتن مقالات تخصصی</li>
+                        <li>✓ طراحی گرافیک</li>
+                        <li>✓ تولید ویدئو</li>
+                    </ul>
+                </div>
+
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="text-4xl mb-4">🚀</div>
+                    <h3 class="text-xl font-semibold mb-4 text-gray-900">مشاوره استراتژیک</h3>
+                    <p class="text-gray-600 mb-6">مشاوره تخصصی برای رشد و توسعه کسب‌وکار</p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>✓ تدوین استراتژی بازاریابی</li>
+                        <li>✓ بررسی بازار هدف</li>
+                        <li>✓ برنامه‌ریزی بلندمدت</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">درباره سلاطین</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        ما در سلاطین با بیش از ۵ سال تجربه در حوزه بازاریابی دیجیتال، به کسب‌وکارها کمک می‌کنیم تا در دنیای آنلاین موفق شوند.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8">
+                        تیم ما متشکل از متخصصان با تجربه در زمینه‌های مختلف بازاریابی، طراحی و توسعه است که با استفاده از جدیدترین تکنولوژی‌ها و روش‌ها، بهترین نتایج را برای مشتریان خود به ارمغان می‌آورند.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-purple-600 mb-2">+200</div>
+                            <div class="text-gray-600">پروژه موفق</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-purple-600 mb-2">+150</div>
+                            <div class="text-gray-600">مشتری راضی</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-purple-400 to-blue-500 rounded-full w-80 h-80 mx-auto flex items-center justify-center text-white text-8xl">
+                        👑
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">نمونه کارهای ما</h2>
+                <p class="text-lg text-gray-600">برخی از پروژه‌های موفق که برای مشتریان خود انجام داده‌ایم</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-br from-pink-400 to-red-500 flex items-center justify-center text-white text-4xl">
+                        🛍️
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">فروشگاه آنلاین مد</h3>
+                        <p class="text-gray-600 mb-4">افزایش ۳۰۰٪ فروش در ۶ ماه</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">اینستاگرام</span>
+                            <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">تبلیغات</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center text-white text-4xl">
+                        🏥
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">کلینیک دندانپزشکی</h3>
+                        <p class="text-gray-600 mb-4">جذب ۵۰ بیمار جدید در ماه</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">گوگل ادز</span>
+                            <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">سئو</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center text-white text-4xl">
+                        🍕
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">رستوران فست‌فود</h3>
+                        <p class="text-gray-600 mb-4">افزایش ۲۰۰٪ سفارش آنلاین</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">اپلیکیشن</span>
+                            <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">محتوا</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">تماس با ما</h2>
+                <p class="text-lg text-gray-600">آماده همکاری و پاسخگویی به سوالات شما هستیم</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-900">فرم تماس</h3>
+                        <form id="contact-form" class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">نام و نام خانوادگی</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="نام خود را وارد کنید">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">شماره تماس</label>
+                                <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="09xxxxxxxxx">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">ایمیل</label>
+                                <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="email@example.com">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">موضوع</label>
+                                <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent">
+                                    <option>مشاوره رایگان</option>
+                                    <option>بازاریابی شبکه‌های اجتماعی</option>
+                                    <option>تبلیغات آنلاین</option>
+                                    <option>طراحی وب‌سایت</option>
+                                    <option>سایر موارد</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">پیام شما</label>
+                                <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="پیام خود را بنویسید..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-purple-600 text-white py-3 px-6 rounded-lg hover:bg-purple-700 transition duration-300 font-semibold">
+                                ارسال پیام
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="text-2xl ml-4">📞</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">تلفن تماس</h4>
+                                <p class="text-gray-600">021-12345678</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="text-2xl ml-4">📱</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">موبایل</h4>
+                                <p class="text-gray-600">0912-3456789</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="text-2xl ml-4">✉️</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">ایمیل</h4>
+                                <p class="text-gray-600">info@salatin-marketing.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="text-2xl ml-4">📍</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">آدرس</h4>
+                                <p class="text-gray-600">تهران، خیابان ولیعصر، پلاک ۱۲۳</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <h4 class="font-semibold text-gray-900 mb-4">شبکه‌های اجتماعی</h4>
+                        <div class="flex space-x-reverse space-x-4">
+                            <a href="#" class="text-2xl hover:scale-110 transition duration-300">📱</a>
+                            <a href="#" class="text-2xl hover:scale-110 transition duration-300">📧</a>
+                            <a href="#" class="text-2xl hover:scale-110 transition duration-300">🌐</a>
+                            <a href="#" class="text-2xl hover:scale-110 transition duration-300">💼</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-bold mb-4">👑 سلاطین</div>
+                    <p class="text-gray-400 mb-4">
+                        پادشاهی در دنیای دیجیتال با بهترین خدمات بازاریابی
+                    </p>
+                    <div class="flex space-x-reverse space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">📱</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">📧</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">🌐</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">خدمات</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition duration-300">بازاریابی شبکه‌های اجتماعی</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">تبلیغات هدفمند</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">طراحی وب‌سایت</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">تولید محتوا</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">لینک‌های مفید</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#about" class="hover:text-white transition duration-300">درباره ما</a></li>
+                        <li><a href="#portfolio" class="hover:text-white transition duration-300">نمونه کارها</a></li>
+                        <li><a href="#contact" class="hover:text-white transition duration-300">تماس با ما</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">وبلاگ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">اطلاعات تماس</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>📞 021-12345678</li>
+                        <li>📱 0912-3456789</li>
+                        <li>✉️ info@salatin-marketing.com</li>
+                        <li>📍 تهران، خیابان ولیعصر</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; ۱۴۰۳ خدمات بازاریابی سلاطین. تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Contact form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const name = this.querySelector('input[type="text"]').value;
+            const phone = this.querySelector('input[type="tel"]').value;
+            const email = this.querySelector('input[type="email"]').value;
+            const subject = this.querySelector('select').value;
+            const message = this.querySelector('textarea').value;
+            
+            // Simple validation
+            if (!name || !phone || !email || !message) {
+                alert('لطفاً تمام فیلدهای ضروری را پر کنید.');
+                return;
+            }
+            
+            // Show success message
+            alert('پیام شما با موفقیت ارسال شد! به زودی با شما تماس خواهیم گرفت.');
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationDelay = '0s';
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe service cards and other elements
+        document.querySelectorAll('.service-card, .bg-white').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Add active navigation highlighting
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('text-purple-600');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('text-purple-600');
+                }
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'978f672a203bf9ee',t:'MTc1Njg0MTIyOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
